@@ -34,10 +34,17 @@ $(function() {
     $("#guideList li").hover(function(){
         hideSubC = false;
         subId = $(this).attr("dataName");
+        console.log(subId);
+        if(subId == 'allMenu'){
+            return;
+        }
         showSub($(this));
     },function(){
         hideSubC = true;
         subId = $(this).attr("dataName");
+        if(subId == 'allMenu'){
+            return;
+        }
         setTimeout(function(){
             if(hideSubC && hideSuper) {
                 hideSub();
@@ -106,4 +113,26 @@ $(function() {
             }
         }
     }
+    $("#allenuM").addClass("none");
+
+    // var hideSub = true;
+
+    $("#allenuMLi").hover(function() {
+        // hideSub = false;
+    }, function() {
+        hideSub = true;
+        setTimeout(function() {
+            $("#allMenu").addClass("none");
+        }, 200);
+    });
+    $("#allMenu").hover(function() {
+        $("#allMenu").removeClass("none");
+        $(".menuwrap").mCustomScrollbar("update");
+    }, function() {
+        setTimeout(function() {
+            if (hideSub)
+                $("#allMenu").addClass("none");
+        }, 200);
+    });
+
 })

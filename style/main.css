@@ -162,9 +162,10 @@ a {
 
 .system-top {
     width: auto;
-    height: 80px;
+    height: 100px;
     background: url(../image/system-top.jpg) left no-repeat;
     position: relative;
+    background-position: left top;
 }
 
 body{
@@ -255,4 +256,177 @@ div{
 
 body {
     background: url(../image/bannerbg.png) top repeat-x;
+    background-size: 100% 100px;
+}
+
+span{
+    margin: 0;
+    padding: 0;
+}
+
+/*tab*/
+.prev,.next{position: absolute;width: 20px;height: 20px;cursor: pointer;bottom:0; text-align: center;line-height: 20px;font-weight: bold;color: #fff;}
+.prev{left:98px;}
+.next{right: 0px;}
+.no_click{}
+.tab{
+    position: absolute;
+    left:120px;
+    bottom: 0;
+    margin-bottom: -1px;
+    display:block;width:100px;height:30px;overflow:hidden;
+
+}
+.tablist{
+    position:relative;
+    width:90000px;
+}
+.tablist li{
+    float: left;
+    height:29px;
+    margin-left: 1px;
+}
+.tablist li div{
+
+}
+.tab-l{
+    width:auto;
+    height:29px;
+    padding-left:25px;
+    background:url(../image/navbg-blue.png) left top no-repeat;
+    color:#ffffff;
+    font-size: 14px;
+    font-family: "黑体";
+    cursor: pointer;
+    position: relative;
+}
+.tab-r{
+    width:auto;
+    height:29px;
+    padding-right:40px;
+    background:url(../image/navbg-blue.png) right top no-repeat ;
+    z-index: 100;
+}
+.tab-m{
+    width:auto;
+    height:29px;
+    line-height: 29px;
+    min-width: 60px;
+}
+.tab-close{
+    width:9px;
+    height:9px;
+    display: block;
+    position: absolute;
+    background-position: right -164px;
+    right:11px;
+    top:10px;
+}
+.tabon .tab-l{
+    color:#7a7a7a;
+    background:url(../image/navbg-white.png) left top no-repeat;
+}
+.tabon .tab-r{
+    background:url(../image/navbg-white.png) right top no-repeat;
+}
+.tabon .tab-close{
+    background-position: right -175px;
+}
+/***************************************end********************************/
+.container{
+    padding-left:96px;
+}
+.footer{
+    width:auto;
+    height:30px;
+    background-color: #6a97d6;
+}
+
+.footer p {
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    font-family: "微软雅黑";
+}
+.cb{
+    clear: both;
+}
+
+.tab-close {
+    background: url(../image/portal-all.png) 0 0 no-repeat;
+}
+
+.menu{
+    display: block;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 117px;
+    width:82px;
+    height:29px;
+    background:url(../images/menu.png) 0 0 no-repeat;
+    background-position:center center
+
+}
+
+.menuwrap{
+    padding:35px 0 0 28px;
+    position: relative;
+    overflow: hidden;
+}
+.menuout{
+    width:33%;
+
+    float: left;
+}
+.menuitem{
+    border-left:1px solid #bfbfbf;
+    padding:0 50px 0 18px;
+    margin-bottom: 70px;
+}
+
+.menuitem h3 {
+    color: #000000;
+    font-size: 24px;
+    font-family: "黑体";
+    margin-bottom: 25px;
+}
+.menuitem li{
+    float: left;
+    width:98px;
+    margin-bottom: 12px;
+}
+.menuitem li a{
+    color:#222222;
+}
+.pt0{
+    padding-top:0;
+}
+
+
+#allmenu{
+    position: absolute;
+    top: 84px;
+    z-index: 1000;
+    left:100px;
+    background-color:#ffffff;
+    border:1px solid #bfbfbf;
+
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    box-shadow: #666 0px 0px 10px;
+    -webkit-box-shadow: #666 0px 0px 1px;
+    -moz-box-shadow: #666 0px 0px 1px;
+}
+
+.withe {
+    color: #fff;
+}
+
+.withe hover {
+    color: #fff;
+}
+
+.withe active {
+    color: #fff;
 }
