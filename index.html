@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/extends.js"></script>
+    <link href="style/main.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="system-top" style="">
+    <div class="admin-login">
+        <p id="signbox" class="tr mt10">
+            <input onclick="goClose();" class="clean-gray fr" type="submit" name="button1" id="button1" value="安全退出">
+            <input class="clean-gray fr" type="submit" name="button" id="button" onclick="location.href='/cqaz_rgs/employee_toIndex.do'" value="返回首页">
+        </p>
+        <p id="userinfo" class="tr">
+            <span class="aps1 fr">管理员同志，您好！</span>
+            <!-- 您已工作<span id="timetext"></span>。 -->
+        </p>
+    </div>
+</div>
+<div class="body-content" style="position: relative">
+<div class="guidewrap">
+    <div class="guidecontent">
+        <a href="javascript:void(0);" class="arrow uparrow"></a>
+        <div class="slidewrap" id="slidewrap">
+            <ul id="guideList">
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="任务管理">
+                    <a href="javascript:mainClick();">
+                        <span class="gkyjx-icon"></span>
+                    </a>
+                </li>
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="项目管理">
+                    <a href="javascript:contactsClick();">
+                        <span class="gkyjx-icon"></span>
+                    </a>
+                </li>
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                    <a href="javascript:imClick();">
+                        <span class="gkyjx-icon"></span>
+                    </a>
+                </li>
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                    <a href="javascript:roleClick();">
+                        <span class="gkyjx-icon"></span>
+                    </a>
+                </li>
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                    <a href="javascript:keywordClick();">
+                        <span class="gkyjx-icon"></span>
+                    </a>
+                </li>
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                    <a href="javascript:resigningClick();">
+                        <span class="gkyjx-icon"></span>
+                    </a>
+                </li>
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                    <a href="javascript:licenseClick();">
+                        <span class="gkyjx-icon"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript:void(0);" class="arrow downarrow"></a>
+    </div>
+
+    <div class="sub-layout none" id="subcontent" style="left: 96px; top: 493px;">
+        <div class="sub-top"></div>
+        <div class="sub-middle" id="subContainer">
+            <div id="任务管理" class="none">
+                <div class="sub-row clearfix">
+                    <h3>待办工作</h3>
+                    <ul>
+                        <li><a rel="page-PARENTID" href="javascript:atab('项目待办','https://www.baidu.com','0','0');">
+                            项目待办 </a></li>
+                        <li><a rel="page-PARENTID" href="javascript:atab('派工待办','http://61.155.85.74:4683/trueWorkFlow/table_getPendingList.do?itemid=AD2BD69D-5E80-46E8-BF44-4C0E282C5EDD','0','1');">
+                            派工待办 </a></li>
+                        <li><a rel="page-PARENTID" href="javascript:atab('人事工作待办','http://61.155.85.74:4683/trueWorkFlow/table_getPendingList.do?itemid=C4DBF710-76C7-47D9-9488-4A9D2EDD29C4,47B5ACC7-0C30-46C1-A3EF-601E766149D4,BEFCE429-1195-473D-B064-4F95FEB2E74B,138D6DA4-BEBA-4FCB-849A-E7A5DD6C724B,5764F15F-6A97-422B-A42F-E0B39994F843,6CD93D99-3A19-4ABD-B9B4-A1B190E15127,66F15E6E-7E6E-4EE9-B2EB-F8C9952F0035','0','1');">
+                            人事工作待办 </a></li>
+                    </ul>
+                </div>
+                <div class="sub-row clearfix">
+                    <h3>已办工作</h3>
+                    <ul>
+                        <li><a rel="page-PARENTID" href="javascript:atab('派工已办','http://61.155.85.74:4683/trueWorkFlow/table_getOverList.do?itemid=AD2BD69D-5E80-46E8-BF44-4C0E282C5EDD','0','1');">
+                            派工已办 </a></li>
+                        <li><a rel="page-PARENTID" href="javascript:atab('项目已办','projectAllocate_toGetList.do?sfsub=1','0','0');">
+                            项目已办 </a></li>
+                        <li><a rel="page-PARENTID" href="javascript:atab('人事工作已办','http://61.155.85.74:4683/trueWorkFlow/table_getOverList.do?itemid=C4DBF710-76C7-47D9-9488-4A9D2EDD29C4,47B5ACC7-0C30-46C1-A3EF-601E766149D4,BEFCE429-1195-473D-B064-4F95FEB2E74B,138D6DA4-BEBA-4FCB-849A-E7A5DD6C724B,5764F15F-6A97-422B-A42F-E0B39994F843,6CD93D99-3A19-4ABD-B9B4-A1B190E15127,66F15E6E-7E6E-4EE9-B2EB-F8C9952F0035','0','1');">
+                            人事工作已办 </a></li>
+                        <li><a rel="page-PARENTID" href="javascript:atab('收藏夹','http://61.155.85.74:4683/trueWorkFlow/table_getDoFileList.do?favourite=1','0','1');">
+                            收藏夹 </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="项目管理" class="none">
+                <div class="sub-row clearfix">
+                    <h3>督办管理</h3>
+                    <ul>
+                        <li><a rel="page-PARENTID" href="javascript:atab('收到的督办','supervise_getAcceptedSuperviseList.do','','0');">
+                            收到的督办 </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sub-bottom"></div>
+        <div class="triangle" id="triangle" style="top: 41px;"></div>
+    </div>
+</div>
+<div class="system-right" style="display: inline;float: left;height: 773px;overflow-x: hidden;">
+    <iframe id="jQcontainertext" src="https://www.baidu.com" name="main" frameborder="0" scrolling="none" noresize="noresize" style="height: 766px;"></iframe>
+</div>
+</div>
+<script>
+    function atab(name,src){
+        document.getElementById('jQcontainertext').src=src;
+    }
+    $(document).ready(function(){
+        setSize();
+    });
+    $(window).resize(function() {
+        setSize();
+    });
+    function setSize(){
+        $('.system-right').width(window.innerWidth - 120);
+        document.getElementById('jQcontainertext').style.width = window.innerWidth - 120 + 'px';
+        $('.system-top').width = window.innerWidth;
+        $('.body-content').height(window.innerHeight-82);
+        $('.guidewrap').height(window.innerHeight-82);
+        $('.guidecontent').height(window.innerHeight-82);
+        $('.system-right').height(window.innerHeight-82);
+        $('.slidewrap').height(window.innerHeight-142);
+    }
+</script>
+</body>
+</html>

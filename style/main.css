@@ -1,0 +1,258 @@
+ul li {
+    float: right;
+    border-bottom: 1px solid #f2f2f2;
+    list-style-type: none;
+}
+.uparrow:hover {
+    background-position: -97px 0;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    color: #2a6496;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+.arrow {
+    display: block;
+    width: 96px;
+    height: 30px;
+    background: url(../image/arrow.jpg) 0 0 no-repeat;
+}
+.downarrow:hover {
+    background-position: -97px -31px;
+}
+.downarrow {
+    background-position: 0 -31px;
+}
+.guidewrap{
+    width:96px;
+    height:100%;
+    /*position:absolute;*/
+    /*left:0;*/
+    /*top:0;*/
+    border-right: 1px solid #f2f2f2;
+    display: inline;
+    float: left;
+}
+.guidecontent{
+    width:100%;
+    height: 737px;
+}
+.slidewrap{
+    width:100%;
+    height: 677px;
+    overflow: hidden;
+}
+#guideList{
+    overflow: hidden;
+    position:relative;
+}
+#guideList li{
+    height:101px;
+    overflow: hidden;
+}
+#guideList li a{
+    width:83px;
+    height:93px;
+    display: block;
+    margin:0 auto;
+    background:url(../image/item-boder.jpg) left bottom repeat-x;
+}
+#guideList li a span{
+    width:100%;
+    height:83px;
+    background:url(../image/iconSprite.png) 0 0 no-repeat;
+    display: block;
+    margin-top:8px;
+}
+#guideList li .gkyjx-icon{
+    background-position: -172px -96px;
+}
+#guideList li:hover .gkyjx-icon{
+    background-position: -172px -384px;
+}
+#guideList li a {
+    width: 83px;
+    height: 93px;
+    display: block;
+    margin: 0 auto;
+    background: url(../image/item-boder.jpg) left bottom repeat-x;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sub-layout {
+    width: 307px;
+    height: auto;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+}
+.sub-top{
+    width:100%;
+    height:13px;
+    background:url(../image/subtop.png) right top no-repeat;
+}
+.sub-middle{
+    padding:0 15px;
+    height:auto;
+    background:url(../image/submiddle.png) right top repeat-y;
+    min-height: 200px;
+}
+.sub-bottom{
+    width:100%;
+    height:16px;
+    background:url(../image/subbottom.png) right top no-repeat;
+}
+.sub-middle{
+    padding-top: 15px;
+}
+.sub-row{
+}
+.sub-row h3{
+    font-weight: bold;
+    color:#224585;
+    padding-left: 12px;
+    background: url(../image/bluearrow.png) 0 4px no-repeat;
+    margin-bottom: 15px;
+}
+.sub-row ul{
+    padding-left: 12px;
+}
+.sub-row ul li{
+    float: left;
+    margin-bottom: 12px;
+}
+.sub-row ul li a{
+    padding:0 8px;
+    display: block;
+    font-size: 12px;
+    height:14px;
+    line-height: 14px;
+    border-left:1px solid #747474;
+    color:#747474;
+}
+.sub-row ul li a:hover{
+    text-decoration: underline;
+}
+.triangle{
+    width:7px;
+    height:8px;
+    background: url(../image/triangle.png) 0 0 no-repeat;
+    position: absolute;
+    left:-4px;
+    top:41px;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    zoom: 1;
+}
+.none{
+    display: none;
+}
+
+.system-top {
+    width: auto;
+    height: 80px;
+    background: url(../image/system-top.jpg) left no-repeat;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    margin:0;
+    padding:0;
+}
+.admin-login {
+    height: 80px;
+    position: absolute;
+    right: 10px;
+    width: auto;
+}
+
+.admin-login p {
+    height: 30px;
+    line-height: 30px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.tr {
+    text-align: right;
+}
+
+#signbox input {
+    text-align: right;
+    margin: 0 3px;
+    padding: 3px 20px 3px 20px !important;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+#signbox input {
+    text-align: right;
+    margin: 0 3px;
+    padding: 3px 20px 3px 20px !important;
+    background: #ffffff;
+    cursor: pointer;
+}
+.clean-gray {
+    background: none;
+    border: 0;
+    color: #0468be;
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    text-shadow: 0 1px 0 #eee;
+}
+
+#userinfo {
+    text-align: right;
+}
+.admin-login p {
+    height: 30px;
+    line-height: 30px;
+}
+
+.admin-login .aps1 {
+    display: inline;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    background: url(../image/admin-arr.gif) left center no-repeat;
+    color: #000000;
+    font-size: 12px;
+}
+
+#rbbox{
+    position:absolute;
+    right:0;
+    bottom:26px;
+    width:200px;
+    height:0px;
+    overflow:hidden;
+    background-color:#fff;
+}
+.button{
+    display:inline;
+    float:right;
+    font-size:12px;
+    cursor:pointer;
+}
+
+body {
+    background: url(../image/bannerbg.png) top repeat-x;
+}
