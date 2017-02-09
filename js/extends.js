@@ -7,14 +7,12 @@ $(function() {
     var subId=null;
     var itemArr = [];
     $(".arrow").bind("click", function () {
-        console.log('init1');
         if ($("#guideList").is(":animated")) return;
         var mt = parseInt($("#guideList").css("marginTop")), tomt;
         if ($(this).hasClass("uparrow")) {
             tomt = mt + 101 >= 0 ? 0 : mt + 101;
             $("#guideList").animate({"margin-top": tomt + "px"}, 300);
         } else if ($(this).hasClass("downarrow")) {
-            console.log('down');
             var limitMT = $("#guideList").height() - $("#slidewrap").height();
             tomt = mt - 101 < -limitMT ? -limitMT : mt - 101;
             $("#guideList").animate({"margin-top": tomt + "px"}, 300);
@@ -34,7 +32,6 @@ $(function() {
     $("#guideList li").hover(function(){
         hideSubC = false;
         subId = $(this).attr("dataName");
-        console.log(subId);
         if(subId == 'allMenu'){
             return;
         }
@@ -75,19 +72,20 @@ $(function() {
         for(var i=0;i<itemArr.length;i++){
             itemArr[i].addClass('none');
         }
-        console.log(superH,superT);
-        console.log(superT-90+superH);
-        console.log(window.innerHeight);
-        var mT = superT-90+superH;
-        if(window.innerHeight - mT < 150){
-            mT = window.innerHeight - 150;
-        }
+
+
         $("#"+subId).removeClass("none");
+
+        $('.sub-layout').removeClass("none");
+
+        var mT = superT-200+superH;
+        if(100+mT+$('.sub-layout').height() > window.innerHeight){
+            mT = window.innerHeight - 100 - $('.sub-layout').height();
+        }
         $('.sub-layout').css({
             left:superL + superW +"px",
             top:mT+ "px"
         });
-        $('.sub-layout').removeClass("none");
     }
 
     function hideSub(){
