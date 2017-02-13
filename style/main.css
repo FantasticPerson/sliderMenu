@@ -222,6 +222,7 @@ div{
 
 #userinfo {
     text-align: right;
+    margin-top: -10px;
 }
 .admin-login p {
     height: 30px;

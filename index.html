@@ -51,37 +51,42 @@
                         <!--<span class="gkyjx-icon"></span>-->
                     <!--</a>-->
                 <!--</li>-->
-                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="任务管理">
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="安置房信息管理">
                     <a href="javascript:mainClick();">
                         <span class="gkyjx-icon"></span>
                     </a>
                 </li>
-                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="项目管理">
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="拆迁户信息管理">
                     <a href="javascript:contactsClick();">
                         <span class="gkyjx-icon"></span>
                     </a>
                 </li>
-                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="房源配置管理">
                     <a href="javascript:imClick();">
                         <span class="gkyjx-icon"></span>
                     </a>
                 </li>
-                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="选房管理">
                     <a href="javascript:roleClick();">
                         <span class="gkyjx-icon"></span>
                     </a>
                 </li>
-                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="租房管理子系统">
                     <a href="javascript:keywordClick();">
                         <span class="gkyjx-icon"></span>
                     </a>
                 </li>
-                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="综合查询">
                     <a href="javascript:resigningClick();">
                         <span class="gkyjx-icon"></span>
                     </a>
                 </li>
-                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="">
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="个人服务">
+                    <a href="javascript:licenseClick();">
+                        <span class="gkyjx-icon"></span>
+                    </a>
+                </li>
+                <li data-role="2d51091a-3bee-4213-b97b-23996aa84637" dataName="系统管理">
                     <a href="javascript:licenseClick();">
                         <span class="gkyjx-icon"></span>
                     </a>
@@ -94,54 +99,205 @@
     <div class="sub-layout none" id="subcontent" style="left: 96px; top: 493px;">
         <div class="sub-top"></div>
         <div class="sub-middle" id="subContainer">
-            <div id="任务管理" class="none">
+
+            <div id="安置房信息管理" class="none">
+
                 <div class="sub-row clearfix">
-                    <h3>待办工作</h3>
+
+
+                    <h3>安置房信息管理</h3>
+
                     <ul>
-                        <li><a rel="page-PARENTID" href="javascript:atab('项目待办','https://www.baidu.com','0','0');">
-                            项目待办 </a></li>
-                        <li><a rel="page-PARENTID" href="javascript:atab('派工待办','http://61.155.85.74:4683/trueWorkFlow/table_getPendingList.do?itemid=AD2BD69D-5E80-46E8-BF44-4C0E282C5EDD','0','1');">
-                            派工待办 </a></li>
-                        <li><a rel="page-PARENTID" href="javascript:atab('人事工作待办','http://61.155.85.74:4683/trueWorkFlow/table_getPendingList.do?itemid=C4DBF710-76C7-47D9-9488-4A9D2EDD29C4,47B5ACC7-0C30-46C1-A3EF-601E766149D4,BEFCE429-1195-473D-B064-4F95FEB2E74B,138D6DA4-BEBA-4FCB-849A-E7A5DD6C724B,5764F15F-6A97-422B-A42F-E0B39994F843,6CD93D99-3A19-4ABD-B9B4-A1B190E15127,66F15E6E-7E6E-4EE9-B2EB-F8C9952F0035','0','1');">
-                            人事工作待办 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('拆迁项目信息管理','azfxx_getCqxmList.do','0','1');">
+                            拆迁项目信息管理 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('安置房基本信息','azfxx_getXqxxList.do','0','1');">
+                            安置房基本信息 </a></li>
+
                     </ul>
+
                 </div>
-                <div class="sub-row clearfix">
-                    <h3>已办工作</h3>
-                    <ul>
-                        <li><a rel="page-PARENTID" href="javascript:atab('派工已办','http://61.155.85.74:4683/trueWorkFlow/table_getOverList.do?itemid=AD2BD69D-5E80-46E8-BF44-4C0E282C5EDD','0','1');">
-                            派工已办 </a></li>
-                        <li><a rel="page-PARENTID" href="javascript:atab('项目已办','projectAllocate_toGetList.do?sfsub=1','0','0');">
-                            项目已办 </a></li>
-                        <li><a rel="page-PARENTID" href="javascript:atab('人事工作已办','http://61.155.85.74:4683/trueWorkFlow/table_getOverList.do?itemid=C4DBF710-76C7-47D9-9488-4A9D2EDD29C4,47B5ACC7-0C30-46C1-A3EF-601E766149D4,BEFCE429-1195-473D-B064-4F95FEB2E74B,138D6DA4-BEBA-4FCB-849A-E7A5DD6C724B,5764F15F-6A97-422B-A42F-E0B39994F843,6CD93D99-3A19-4ABD-B9B4-A1B190E15127,66F15E6E-7E6E-4EE9-B2EB-F8C9952F0035','0','1');">
-                            人事工作已办 </a></li>
-                        <li><a rel="page-PARENTID" href="javascript:atab('收藏夹','http://61.155.85.74:4683/trueWorkFlow/table_getDoFileList.do?favourite=1','0','1');">
-                            收藏夹 </a></li>
-                    </ul>
-                </div>
-                <div class="sub-row clearfix">
-                    <h3>已办工作</h3>
-                    <ul>
-                        <li><a rel="page-PARENTID" href="javascript:atab('派工已办','http://61.155.85.74:4683/trueWorkFlow/table_getOverList.do?itemid=AD2BD69D-5E80-46E8-BF44-4C0E282C5EDD','0','1');">
-                            派工已办 </a></li>
-                        <li><a rel="page-PARENTID" href="javascript:atab('项目已办','projectAllocate_toGetList.do?sfsub=1','0','0');">
-                            项目已办 </a></li>
-                        <li><a rel="page-PARENTID" href="javascript:atab('人事工作已办','http://61.155.85.74:4683/trueWorkFlow/table_getOverList.do?itemid=C4DBF710-76C7-47D9-9488-4A9D2EDD29C4,47B5ACC7-0C30-46C1-A3EF-601E766149D4,BEFCE429-1195-473D-B064-4F95FEB2E74B,138D6DA4-BEBA-4FCB-849A-E7A5DD6C724B,5764F15F-6A97-422B-A42F-E0B39994F843,6CD93D99-3A19-4ABD-B9B4-A1B190E15127,66F15E6E-7E6E-4EE9-B2EB-F8C9952F0035','0','1');">
-                            人事工作已办 </a></li>
-                        <li><a rel="page-PARENTID" href="javascript:atab('收藏夹','http://61.155.85.74:4683/trueWorkFlow/table_getDoFileList.do?favourite=1','0','1');">
-                            收藏夹 </a></li>
-                    </ul>
-                </div>
+
             </div>
-            <div id="项目管理" class="none">
+
+            <div id="拆迁户信息管理" class="none">
+
                 <div class="sub-row clearfix">
-                    <h3>督办管理</h3>
+
+
+                    <h3>拆迁户信息管理</h3>
+
                     <ul>
-                        <li><a rel="page-PARENTID" href="javascript:atab('收到的督办','supervise_getAcceptedSuperviseList.do','','0');">
-                            收到的督办 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('拆迁人员信息管理','cqh_queryAllCqry.do','0','1');">
+                            拆迁人员信息管理 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('拆迁户主信息管理','cqh_queryAllCqh.do','0','1');">
+                            拆迁户主信息管理 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('删除导入拆迁户主信息','cqh_queryImpCqh.do','0','1');">
+                            删除导入拆迁户主信息 </a></li>
+
                     </ul>
+
                 </div>
+
             </div>
+
+            <div id="房源配置管理" class="none">
+
+                <div class="sub-row clearfix">
+
+
+                    <h3>房源配置管理</h3>
+
+                    <ul>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('手动房源配置管理','hm_getHmList.do','0','1');">
+                            手动房源配置管理 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('随机房源配置管理','employee_toWelcome.do','0','1');">
+                            随机房源配置管理 </a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div id="选房管理" class="none">
+
+                <div class="sub-row clearfix">
+
+
+                    <h3>选房管理</h3>
+
+                    <ul>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('选房管理','azfxx_getXqxxListPic.do','0','1');">
+                            选房管理 </a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div id="租房管理子系统">
+
+                <div class="sub-row clearfix">
+
+
+                    <h3>租房管理子系统</h3>
+
+                    <ul>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('出租情况管理','azfxx_getAllMm.do','0','1');">
+                            出租情况管理 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('租金到期提醒','azfxx_getAllYj.do','0','1');">
+                            租金到期提醒 </a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div id="综合查询">
+
+                <div class="sub-row clearfix">
+
+
+                    <h3>综合查询</h3>
+
+                    <ul>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('综合查询','searchAll_queryAllInfo.do','0','1');">
+                            综合查询 </a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div id="个人服务">
+
+                <div class="sub-row clearfix">
+
+
+                    <h3>个人服务</h3>
+
+                    <ul>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('密码修改','employee_toUpdateEmployeeByUser.do?userName=','0','1');">
+                            密码修改 </a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div id="系统管理">
+
+                <div class="sub-row clearfix">
+
+
+                    <h3>人员维护</h3>
+
+                    <ul>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('人员维护','xyEmployee_queryAllEmployee.do','0','1');">
+                            人员维护 </a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="sub-row clearfix">
+
+
+                    <h3>日志分析</h3>
+
+                    <ul>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('日志','executeLog_personalList.do','0','1');">
+                            日志 </a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="sub-row clearfix">
+
+
+                    <h3>权限设置</h3>
+
+                    <ul>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('角色管理','role_getRoleList.do','0','1');">
+                            角色管理 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('权限管理','right_toShowRightJsp.do','0','1');">
+                            权限管理 </a></li>
+
+                        <li><a rel="page-PARENTID" href="javascript:atab('角色授权','right_showRoleForRight.do','0','1');">
+                            角色授权 </a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
         </div>
         <div class="sub-bottom"></div>
         <div class="triangle" id="triangle" style="top: 41px;"></div>
@@ -159,16 +315,21 @@
         setSize();
     });
     function setSize(){
-        $('.system-right').width(window.innerWidth - 120);
-        document.getElementById('jQcontainertext').style.width = window.innerWidth - 120 + 'px';
-        $('.system-top').width = window.innerWidth;
-        $('.body-content').height(window.innerHeight-112);
-        $('.guidewrap').height(window.innerHeight-112);
-        $('.guidecontent').height(window.innerHeight-112);
-        $('.system-right').height(window.innerHeight-112);
-        $('.slidewrap').height(window.innerHeight-172);
-        $('.tablist').width(window.innerWidth-140);
-        $('.tabsPageScroll .tab').width(window.innerWidth-140);
+        var screenWidth=$(window).width();
+        var screenHeight=$(window).height();
+//        var screenWidth = window.innerWidth ? window.innerWidth : document.body.clientWidth;
+//        var screenHeight = window.innerHeight ? window.innerHeight : document.body.clientHeight;
+        $('.system-right').width(screenWidth - 120);
+//        $('#jQcontainertext').width(window.innerWidth - 120);
+        document.getElementById('jQcontainertext').style.width = screenWidth - 120 + 'px';
+        $('.system-top').width = screenWidth;
+        $('.body-content').height(screenHeight-112);
+        $('.guidewrap').height(screenHeight-112);
+        $('.guidecontent').height(screenHeight-112);
+        $('.system-right').height(screenHeight-112);
+        $('.slidewrap').height(screenHeight-172);
+        $('.tablist').width(screenWidth-140);
+        $('.tabsPageScroll .tab').width(screenWidth-140);
     }
     var prev = $("#prev");
     var next = $("#next");

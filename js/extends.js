@@ -66,7 +66,16 @@ $(function() {
             ot = item.position().top,ft =29,
             t = 0;
         showSubLayer = true;
-        if(itemArr.indexOf($("#"+subId)) < 0){
+        function checkIsInArr(id) {
+            var tempSubItem = $("#"+id);
+            for(var jj=0;jj<itemArr.length;jj++){
+                if(itemArr[jj] == item){
+                    return true;
+                }
+            }
+            return false;
+        }
+        if(!checkIsInArr(subId)){
             itemArr.push($("#"+subId));
         }
         for(var i=0;i<itemArr.length;i++){
@@ -79,8 +88,8 @@ $(function() {
         $('.sub-layout').removeClass("none");
 
         var mT = superT-200+superH;
-        if(100+mT+$('.sub-layout').height() > window.innerHeight){
-            mT = window.innerHeight - 100 - $('.sub-layout').height();
+        if(100+mT+$('.sub-layout').height() > $(window).height()){
+            mT = $(window).height() - 100 - $('.sub-layout').height();
         }
         $('.sub-layout').css({
             left:superL + superW +"px",
